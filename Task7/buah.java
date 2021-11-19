@@ -16,16 +16,16 @@ public class buah extends Box {
   }
 
   public static void main(String[] args) {
-    buah sam = new buah();
-    sam.tambahKeLapak("Durian");
-    sam.tambahKeLapak("Salak");
-    sam.tambahKeLapak("Semangka");
-    sam.tambahKeLapak("Jeruk");
-    sam.tambahKeLapak("Nangka");
-    sam.tambahKeLapak("Melon");
-    sam.tambahKeLapak("Srikaya");
-    sam.susunUlangLapak();
-    sam.tampilkanLapak();
+    buah petani = new buah();
+    petani.tambahKeLapak("Durian");
+    petani.tambahKeLapak("Salak");
+    petani.tambahKeLapak("Semangka");
+    petani.tambahKeLapak("Jeruk");
+    petani.tambahKeLapak("Nangka");
+    petani.tambahKeLapak("Melon");
+    petani.tambahKeLapak("Srikaya");
+    petani.susunUlangLapak();
+    petani.tampilkanLapak();
   }
 
 }
