@@ -98,5 +98,4 @@ class Box {
       items[position] = temp;
     }
   }
-
 }
