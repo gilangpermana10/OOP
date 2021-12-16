@@ -6,14 +6,14 @@ public class Smartphones {
   static Phone phoneOfChoice;
 
   public static void main(String[] args) {
-    Phone SamsungNote9 = new Samsung();
-    Phone XiaomiSlim3 = new Xiaomi();
+    Phone SamsungS21 = new Samsung();
+    Phone XiaomiNote10 = new Xiaomi();
 
-    Scanner input = new Scanner(System.in);
+    Scanner input = new Scanner(System.in); 
 
     System.out.println("--------- Pilih HP ---------");
-    System.out.println("1. Xiaomi Slim 3" );
-    System.out.println("2. Samsung Note 9");
+    System.out.println("1. Xiaomi note 10" );
+    System.out.println("2. Samsung Galaxy S21");
     System.out.println("-----------------------------");
 
     System.out.print("Pilih menu : ");
@@ -21,10 +21,10 @@ public class Smartphones {
 
     switch(answer) {
       case "1":
-        phoneOfChoice = XiaomiSlim3;
+        phoneOfChoice = XiaomiNote10;
         break;
       case "2":
-        phoneOfChoice = SamsungNote9;
+        phoneOfChoice = SamsungS21;
         break;
       default:
         System.out.println("Wrong input number");
@@ -65,6 +65,7 @@ public class Smartphones {
       }
     }
   }
+
 }
 
 
@@ -107,7 +108,7 @@ class Samsung implements Phone {
   boolean isPower;
 
   public Samsung() {
-    volume = 50;
+    volume = 0;
   }
 
   public String getString() {
@@ -118,13 +119,12 @@ class Samsung implements Phone {
   public void powerOn() {
     isPower = true;
     System.out.println("HP Samsung Menyala");
-    System.out.println("samsung-panangan-nuju-salaman.gif");
   }
 
   @Override
   public void powerOff() {
     isPower = false;
-    System.out.println("HP Mati");
+    System.out.println("Smartphone dimatikan");
   }
 
   @Override
@@ -140,7 +140,7 @@ class Samsung implements Phone {
       }
 
     } else {
-      System.out.println("Nyalakan dulu hpnya ganteng");
+      System.out.println("Smartphone dalam keadaan mati, Silahkan hidupkan Smartphone");
     }
   }
 
@@ -157,7 +157,7 @@ class Samsung implements Phone {
       }
 
     } else {
-      System.out.println("Nyalakan dulu hpnya ganteng");
+      System.out.println("Smartphone dalam keadaan mati, Silahkan hidupkan Smartphone");
     }
   }
 
@@ -172,7 +172,7 @@ class Xiaomi implements Phone {
   boolean isPower;
 
   public Xiaomi() {
-    volume = 50;
+    volume = 0;
   }
 
   public String getString() {
@@ -183,13 +183,12 @@ class Xiaomi implements Phone {
   public void powerOn() {
     isPower = true;
     System.out.println("HP Xiaomi Menyala");
-    System.out.println("xiaomi-panangan-nuju-salaman.gif");
   }
 
   @Override
   public void powerOff() {
     isPower = false;
-    System.out.println("HP Mati");
+    System.out.println("Smartphone dimatikan");
   }
 
   @Override
@@ -205,7 +204,7 @@ class Xiaomi implements Phone {
       }
 
     } else {
-      System.out.println("Nyalakan dulu hpnya ganteng");
+      System.out.println("Smartphone dalam keadaan mati, Silahkan hidupkan Smartphone");
     }
   }
 
@@ -222,7 +221,7 @@ class Xiaomi implements Phone {
       }
 
     } else {
-      System.out.println("Nyalakan dulu hpnya ganteng");
+      System.out.println("Smartphone dalam keadaan mati, Silahkan hidupkan Smartphone");
     }
   }
 
