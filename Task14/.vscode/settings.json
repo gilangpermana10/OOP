@@ -1,0 +1,10 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "golden_0_2_3.jar"
+    ],
+    "java.project.sourcePaths": [
+        "src",
+        "MyGame/src"
+    ]
+}
